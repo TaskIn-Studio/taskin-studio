@@ -26,13 +26,13 @@ export const Footer: FC = () => {
           <div>
             <h3 className="text-lg font-semibold text-foreground mb-3">Community</h3>
             <ul className="space-y-2">
-              <li><a href="#" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-primary transition-colors flex items-center"><Send size={16} className="mr-2"/> Telegram</a></li>
-              <li><a href="#" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-primary transition-colors flex items-center"><MessageCircle size={16} className="mr-2"/> Discord</a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-primary transition-colors flex items-center"><Send size={16} className="mr-2" /> Telegram</a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-primary transition-colors flex items-center"><MessageCircle size={16} className="mr-2" /> Discord</a></li>
             </ul>
-             <h3 className="text-lg font-semibold text-foreground mb-3 mt-4">Socials</h3>
+            <h3 className="text-lg font-semibold text-foreground mb-3 mt-4">Socials</h3>
             <ul className="space-y-2">
-              <li><a href="#" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-primary transition-colors flex items-center"><Twitter size={16} className="mr-2"/> Twitter</a></li>
-              <li><a href="#" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-primary transition-colors flex items-center"><Github size={16} className="mr-2"/> GitHub</a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-primary transition-colors flex items-center"><Twitter size={16} className="mr-2" /> Twitter</a></li>
+              <li><a href="https://github.com/maheshalyana/taskin-studio" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-primary transition-colors flex items-center"><Github size={16} className="mr-2" /> GitHub</a></li>
             </ul>
           </div>
           <div>
