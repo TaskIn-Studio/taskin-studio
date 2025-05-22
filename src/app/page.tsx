@@ -1,11 +1,12 @@
-import Link from 'next/link';
-import { getAllBlogPosts } from '@/lib/blog';
-import { BlogCard } from '@/components/blog/BlogCard';
-import { AdComponent } from '@/components/AdComponent';
+import Link from "next/link";
+import { getAllBlogPosts } from "@/lib/blog";
+import { BlogCard } from "@/components/blog/BlogCard";
+import { AdComponent } from "@/components/AdComponent";
 
 export const metadata = {
-  title: 'Taskin Studio — Simple AI Tools for Builders',
-  description: 'Discover a suite of minimal AI-powered tools built to save time and boost productivity. Currency converter, content generators, and more.',
+  title: "Taskin Studio — Simple AI Tools for Builders",
+  description:
+    "Discover a suite of minimal AI-powered tools built to save time and boost productivity. Currency converter, content generators, and more.",
 };
 
 export default async function HomePage() {
@@ -17,12 +18,15 @@ export default async function HomePage() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 text-center">
         <h1 className="mb-6 text-5xl font-bold text-gray-900 dark:text-gray-100 md:text-6xl">
-          Simple AI Tools for{' '}
-          <span className="text-purple-600 dark:text-purple-400">Builders</span>
+          Tools that do{" "}
+          <span className="text-purple-600 dark:text-purple-400">
+            one thing
+          </span>
+          . <br /> Exceptionally well.
         </h1>
         <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
-          Discover a suite of minimal AI-powered tools built to save time and boost
-          productivity. Currency converter, content generators, and more.
+          Discover a suite of minimal AI-powered tools built to save time,
+          automate work, and unlock creativity.
         </p>
         <div className="flex justify-center gap-4">
           <Link

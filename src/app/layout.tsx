@@ -5,6 +5,8 @@ import { ThemeProvider } from '@/components/ThemeProvider';
 import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { CookieConsent } from '@/components/CookieConsent';
+import { GoogleAnalytics } from '@/components/GoogleAnalytics';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -12,14 +14,20 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Taskin Studio — Simple AI Tools for Builders',
-  description: 'Discover a suite of minimal AI-powered tools built to save time and boost productivity. Currency converter, content generators, and more.',
+  metadataBase: new URL('https://taskin.studio'),
+  title: {
+    default: 'Taskin Studio - AI-Powered Productivity Tools',
+    template: '%s | Taskin Studio',
+  },
+  description: 'Discover our suite of AI-powered tools designed to boost your productivity and streamline your workflow.',
   openGraph: {
-    title: 'Taskin Studio — Simple AI Tools for Builders',
-    description: 'Discover a suite of minimal AI-powered tools built to save time and boost productivity. Currency converter, content generators, and more.',
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://taskin.studio',
+    siteName: 'Taskin Studio',
     images: [
       {
-        url: '/taskin-logo.svg', // Replace with actual OG image
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Taskin Studio',
@@ -28,9 +36,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Taskin Studio — Simple AI Tools for Builders',
-    description: 'Discover a suite of minimal AI-powered tools built to save time and boost productivity. Currency converter, content generators, and more.',
-    images: ['/taskin-logo.svg'], // Replace with actual Twitter image
+    site: '@TaskinStudio',
+    creator: '@TaskinStudio',
+  },
+  alternates: {
+    canonical: 'https://taskin.studio',
+    types: {
+    'application/rss+xml': 'https://taskin.studio/feed.xml',
+    },
   },
 };
 
@@ -50,11 +63,27 @@ export default function RootLayout({
         {/* open graph */}
         <meta property="og:title" content="Taskin Studio — Simple AI Tools for Builders" />
         <meta property="og:description" content="Discover a suite of minimal AI-powered tools built to save time and boost productivity. Currency converter, content generators, and more." />
-        <meta property="og:image" content="/taskin-logo.svg" />
+        <meta property="og:image" content="/taskin-logo.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Taskin Studio" />
         <meta name="google-adsense-account" content="ca-pub-2234156203417980"></meta>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'WebSite',
+              name: 'Taskin Studio',
+              url: 'https://taskin.studio',
+              potentialAction: {
+                '@type': 'SearchAction',
+                target: 'https://taskin.studio/search?q={search_term_string}',
+                'query-input': 'required name=search_term_string',
+              },
+            }),
+          }}
+        />
       </head>
       <body className={`${inter.variable} font-sans antialiased flex flex-col min-h-screen`}>
         <ThemeProvider
@@ -68,7 +97,9 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
+          <CookieConsent />
           <Toaster />
+          <GoogleAnalytics />
         </ThemeProvider>
       </body>
     </html>
