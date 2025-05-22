@@ -4,151 +4,72 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy - Taskin Studio',
-  description: 'Privacy Policy for Taskin Studio - Learn how we collect, use, and protect your data.',
+  title: 'Privacy Policy — Taskin Studio',
+  description: 'Privacy Policy for Taskin Studio and its services.',
 };
 
 const PrivacyPolicy: FC = () => {
   return (
-    <div className="container mx-auto px-4 py-12 max-w-4xl">
-      <Card className="border-none shadow-none">
-        <CardHeader className="space-y-4">
-          <CardTitle className="text-4xl font-bold">Privacy Policy for Taskin Studio</CardTitle>
-          <p className="text-muted-foreground italic">Last Updated: May 16, 2025</p>
-        </CardHeader>
-        <CardContent className="space-y-8">
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">Introduction</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              Welcome to Taskin Studio ("we," "our," or "us"). We respect your privacy and are committed to protecting your personal data.
-              This privacy policy will inform you about how we look after your personal data when you visit our website (https://taskin.studio)
-              and tell you about your privacy rights and how the law protects you.
-            </p>
-          </section>
+    <div className="container mx-auto px-4 py-12">
+      <div className="mx-auto max-w-3xl">
+        <h1 className="mb-8 text-4xl font-bold text-gray-900 dark:text-gray-100">
+          Privacy Policy
+        </h1>
+        <div className="prose prose-purple dark:prose-invert">
+          <p>Last updated: {new Date().toLocaleDateString()}</p>
 
-          <Separator />
+          <h2>1. Introduction</h2>
+          <p>
+            Welcome to Taskin Studio. We respect your privacy and are committed to
+            protecting your personal data. This privacy policy will inform you about
+            how we look after your personal data when you visit our website and tell
+            you about your privacy rights.
+          </p>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">Data We Collect</h2>
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-medium mb-3">Information You Provide</h3>
-                <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                  <li>Usage data (how you interact with our tools)</li>
-                  <li>Technical data (browser type, device information)</li>
-                  <li>Analytics data (pages visited, time spent)</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-xl font-medium mb-3">Automatically Collected Information</h3>
-                <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                  <li>IP address</li>
-                  <li>Browser type and version</li>
-                  <li>Operating system</li>
-                  <li>Time zone setting</li>
-                  <li>Browser plug-in types and versions</li>
-                  <li>Device information</li>
-                </ul>
-              </div>
-            </div>
-          </section>
+          <h2>2. Data We Collect</h2>
+          <p>We may collect, use, store and transfer different kinds of personal data about you:</p>
+          <ul>
+            <li>Identity Data: includes first name, last name, username</li>
+            <li>Contact Data: includes email address</li>
+            <li>Technical Data: includes internet protocol (IP) address, browser type and version</li>
+            <li>Usage Data: includes information about how you use our website and services</li>
+          </ul>
 
-          <Separator />
+          <h2>3. How We Use Your Data</h2>
+          <p>We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances:</p>
+          <ul>
+            <li>To provide and maintain our service</li>
+            <li>To notify you about changes to our service</li>
+            <li>To provide customer support</li>
+            <li>To gather analysis or valuable information so that we can improve our service</li>
+            <li>To monitor the usage of our service</li>
+            <li>To detect, prevent and address technical issues</li>
+          </ul>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">How We Use Your Data</h2>
-            <p className="text-muted-foreground">We use the collected data for various purposes:</p>
-            <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-              <li>To provide and maintain our service</li>
-              <li>To notify you about changes to our service</li>
-              <li>To provide customer support</li>
-              <li>To gather analysis or valuable information so that we can improve our service</li>
-              <li>To monitor the usage of our service</li>
-              <li>To detect, prevent and address technical issues</li>
-            </ul>
-          </section>
+          <h2>4. Google AdSense</h2>
+          <p>
+            We use Google AdSense to display advertisements on our website. Google AdSense uses cookies to serve ads based on your prior visits to our website and other sites. You can opt out of personalized advertising by visiting Google's Ads Settings page.
+          </p>
 
-          <Separator />
+          <h2>5. Your Rights</h2>
+          <p>Under certain circumstances, you have rights under data protection laws in relation to your personal data, including the right to:</p>
+          <ul>
+            <li>Request access to your personal data</li>
+            <li>Request correction of your personal data</li>
+            <li>Request erasure of your personal data</li>
+            <li>Object to processing of your personal data</li>
+            <li>Request restriction of processing your personal data</li>
+            <li>Request transfer of your personal data</li>
+            <li>Right to withdraw consent</li>
+          </ul>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">Cookies</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              We use cookies and similar tracking technologies to track activity on our service and hold certain information.
-              Cookies are files with a small amount of data which may include an anonymous unique identifier.
-              You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.
-            </p>
-          </section>
-
-          <Separator />
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">Third-Party Services</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              Our service may contain links to third-party websites and services that are not operated by us.
-              We strongly advise you to review the Privacy Policy of every site you visit.
-              We have no control over and assume no responsibility for the content, privacy policies,
-              or practices of any third-party sites or services.
-            </p>
-          </section>
-
-          <Separator />
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">Data Security</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              We have implemented appropriate security measures to prevent your personal data from being accidentally lost,
-              used, or accessed in an unauthorized way, altered, or disclosed.
-            </p>
-          </section>
-
-          <Separator />
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">Your Rights Under Indian Law</h2>
-            <p className="text-muted-foreground">
-              Under the Information Technology Act, 2000, and the Information Technology (Reasonable Security Practices and
-              Procedures and Sensitive Personal Data or Information) Rules, 2011, you have the following rights:
-            </p>
-            <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-              <li>Right to access your personal data</li>
-              <li>Right to correct your personal data</li>
-              <li>Right to withdraw consent</li>
-              <li>Right to file a complaint with the appropriate authority</li>
-            </ul>
-          </section>
-
-          <Separator />
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">Children's Privacy</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              Our service does not address anyone under the age of 13.
-              We do not knowingly collect personally identifiable information from children under 13.
-            </p>
-          </section>
-
-          <Separator />
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">Changes to This Privacy Policy</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              We may update our Privacy Policy from time to time.
-              We will notify you of any changes by posting the new Privacy Policy on this page
-              and updating the "Last Updated" date.
-            </p>
-          </section>
-
-          <Separator />
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">Contact Us</h2>
-            <p className="text-muted-foreground">If you have any questions about this Privacy Policy, please contact us:</p>
-            <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-              <li>By email: support@taskin.studio</li>
-            </ul>
-          </section>
-        </CardContent>
-      </Card>
+          <h2>6. Contact Us</h2>
+          <p>
+            If you have any questions about this privacy policy or our privacy practices,
+            please contact us at support@taskin.studio.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

@@ -4,150 +4,93 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service - Taskin Studio',
-  description: 'Terms of Service for Taskin Studio - Learn about the terms and conditions for using our services.',
+  title: 'Terms of Service — Taskin Studio',
+  description: 'Terms of Service for Taskin Studio and its services.',
 };
 
 const TermsOfService: FC = () => {
   return (
-    <div className="container mx-auto px-4 py-12 max-w-4xl">
-      <Card className="border-none shadow-none">
-        <CardHeader className="space-y-4">
-          <CardTitle className="text-4xl font-bold">Terms of Service for Taskin Studio</CardTitle>
-          <p className="text-muted-foreground italic">Last Updated: May 16, 2025</p>
-        </CardHeader>
-        <CardContent className="space-y-8">
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">Agreement to Terms</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              By accessing or using Taskin Studio's website and services (collectively, the "Service"),
-              you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part
-              of the terms, you may not access the Service.
-            </p>
-          </section>
+    <div className="container mx-auto px-4 py-12">
+      <div className="mx-auto max-w-3xl">
+        <h1 className="mb-8 text-4xl font-bold text-gray-900 dark:text-gray-100">
+          Terms of Service
+        </h1>
+        <div className="prose prose-purple dark:prose-invert">
+          <p>Last updated: {new Date().toLocaleDateString()}</p>
 
-          <Separator />
+          <h2>1. Agreement to Terms</h2>
+          <p>
+            By accessing and using Taskin Studio, you agree to be bound by these Terms of Service
+            and all applicable laws and regulations. If you do not agree with any of these terms,
+            you are prohibited from using or accessing this site.
+          </p>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">Description of Service</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              Taskin Studio provides utility tools and services including but not limited to currency converters,
-              AI generators, and other developer tools. These services may be free or offered under a freemium model.
-            </p>
-          </section>
+          <h2>2. Use License</h2>
+          <p>
+            Permission is granted to temporarily use Taskin Studio for personal, non-commercial
+            transitory viewing only. This is the grant of a license, not a transfer of title, and
+            under this license you may not:
+          </p>
+          <ul>
+            <li>Modify or copy the materials</li>
+            <li>Use the materials for any commercial purpose</li>
+            <li>Attempt to decompile or reverse engineer any software contained on Taskin Studio</li>
+            <li>Remove any copyright or other proprietary notations from the materials</li>
+            <li>Transfer the materials to another person or "mirror" the materials on any other server</li>
+          </ul>
 
-          <Separator />
+          <h2>3. Disclaimer</h2>
+          <p>
+            The materials on Taskin Studio are provided on an 'as is' basis. Taskin Studio makes no
+            warranties, expressed or implied, and hereby disclaims and negates all other warranties
+            including, without limitation, implied warranties or conditions of merchantability,
+            fitness for a particular purpose, or non-infringement of intellectual property or other
+            violation of rights.
+          </p>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">Use of Service</h2>
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-medium mb-3">Acceptable Use</h3>
-                <p className="text-muted-foreground mb-4">You agree to use the Service only for lawful purposes and in accordance with these Terms. You agree not to:</p>
-                <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                  <li>Use the Service in any way that violates any applicable law or regulation</li>
-                  <li>Use the Service for any harmful or malicious purpose</li>
-                  <li>Attempt to gain unauthorized access to any portion of the Service</li>
-                  <li>Interfere with or disrupt the Service or servers or networks connected to the Service</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-xl font-medium mb-3">Third-Party APIs</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Some of our tools may utilize third-party APIs and services. We are not responsible for the availability,
-                  accuracy, or reliability of these third-party services.
-                </p>
-              </div>
-            </div>
-          </section>
+          <h2>4. Limitations</h2>
+          <p>
+            In no event shall Taskin Studio or its suppliers be liable for any damages (including,
+            without limitation, damages for loss of data or profit, or due to business interruption)
+            arising out of the use or inability to use the materials on Taskin Studio.
+          </p>
 
-          <Separator />
+          <h2>5. Accuracy of Materials</h2>
+          <p>
+            The materials appearing on Taskin Studio could include technical, typographical, or
+            photographic errors. Taskin Studio does not warrant that any of the materials on its
+            website are accurate, complete, or current. Taskin Studio may make changes to the
+            materials contained on its website at any time without notice.
+          </p>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">Intellectual Property</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              The Service and its original content, features, and functionality are owned by Taskin Studio and are
-              protected by international copyright, trademark, patent, trade secret, and other intellectual property
-              or proprietary rights laws.
-            </p>
-          </section>
+          <h2>6. Links</h2>
+          <p>
+            Taskin Studio has not reviewed all of the sites linked to its website and is not
+            responsible for the contents of any such linked site. The inclusion of any link does
+            not imply endorsement by Taskin Studio of the site. Use of any such linked website is
+            at the user's own risk.
+          </p>
 
-          <Separator />
+          <h2>7. Modifications</h2>
+          <p>
+            Taskin Studio may revise these terms of service for its website at any time without
+            notice. By using this website you are agreeing to be bound by the then current version
+            of these terms of service.
+          </p>
 
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">Disclaimer of Warranties</h2>
-            <p className="text-muted-foreground leading-relaxed font-medium">
-              THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.
-              TO THE FULLEST EXTENT PERMISSIBLE UNDER APPLICABLE LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED,
-              INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
-              AND NON-INFRINGEMENT.
-            </p>
-          </section>
+          <h2>8. Governing Law</h2>
+          <p>
+            These terms and conditions are governed by and construed in accordance with the laws
+            and you irrevocably submit to the exclusive jurisdiction of the courts in that location.
+          </p>
 
-          <Separator />
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">Limitation of Liability</h2>
-            <p className="text-muted-foreground leading-relaxed font-medium">
-              IN NO EVENT SHALL TASKIN STUDIO, ITS DIRECTORS, EMPLOYEES, PARTNERS, AGENTS, SUPPLIERS, OR AFFILIATES
-              BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING WITHOUT
-              LIMITATION, LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.
-            </p>
-          </section>
-
-          <Separator />
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">Changes to Terms</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              We reserve the right to modify or replace these Terms at any time. If a revision is material,
-              we will provide at least 30 days' notice prior to any new terms taking effect.
-            </p>
-          </section>
-
-          <Separator />
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">Governing Law</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              These Terms shall be governed by and construed in accordance with the laws of India, without regard
-              to its conflict of law provisions. Any disputes relating to these Terms or the Service will be subject
-              to the exclusive jurisdiction of the courts of India.
-            </p>
-          </section>
-
-          <Separator />
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">Future Services</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              We may introduce new features, services, or payment options in the future. These will be subject to
-              these Terms and any additional terms that may be provided at the time of their introduction.
-            </p>
-          </section>
-
-          <Separator />
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">Contact Information</h2>
-            <p className="text-muted-foreground">For any questions about these Terms, please contact us:</p>
-            <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-              <li>By email: support@taskin.studio</li>
-            </ul>
-          </section>
-
-          <Separator />
-
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight">Severability</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              If any provision of these Terms is held to be unenforceable or invalid, such provision shall be changed
-              and interpreted to accomplish the objectives of such provision to the greatest extent possible under
-              applicable law, and the remaining provisions shall continue in full force and effect.
-            </p>
-          </section>
-        </CardContent>
-      </Card>
+          <h2>9. Contact Us</h2>
+          <p>
+            If you have any questions about these Terms of Service, please contact us at
+            support@taskin.studio.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
