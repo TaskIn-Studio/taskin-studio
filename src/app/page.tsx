@@ -85,11 +85,8 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Ad Section */}
-      <AdComponent slot="homepage-ad" />
-
       {/* Blog Preview Section */}
-      <section className="container mx-auto px-4">
+      <section className="container mx-auto px-4 mb-8">
         <div className="mb-8 flex items-center justify-between">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100">
             Latest from Blog

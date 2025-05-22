@@ -88,8 +88,66 @@ description: 'Post description'
 date: 'YYYY-MM-DD'
 author: 'Author Name'
 image: '/blog/image.jpg'
+metaKeywords: 'keyword1, keyword2, keyword3, keyword4, keyword5'
 ---
 ```
+
+### Meta Keywords
+
+The `metaKeywords` field is used for SEO purposes. It should be a comma-separated list of relevant keywords for your blog post. Best practices for meta keywords:
+
+1. **Keep it Relevant**: Only include keywords that are actually present in your content
+2. **Be Specific**: Use specific, targeted keywords rather than broad terms
+3. **Limit Count**: Include 5-10 relevant keywords
+4. **Use Variations**: Include variations of your main keywords
+5. **Separate with Commas**: Use commas to separate keywords
+6. **No Spaces**: Don't include spaces after commas
+
+Example:
+```markdown
+metaKeywords: 'next.js,react,web development,tutorial,frontend'
+```
+
+### Adding Images to Blog Posts
+
+1. **Store Images**: Place your images in the `public/blog` directory. For example:
+   ```
+   public/blog/
+   ├── post-1/
+   │   ├── hero.jpg
+   │   └── diagram.png
+   └── post-2/
+       └── screenshot.png
+   ```
+
+2. **Reference Images**: In your markdown file, you can include images using standard markdown syntax:
+   ```markdown
+   ![Alt text for the image](/blog/post-1/hero.jpg)
+   ```
+
+3. **Image with Caption**: You can add a caption using HTML:
+   ```markdown
+   <figure>
+     <img src="/blog/post-1/diagram.png" alt="Diagram showing the process flow" />
+     <figcaption>Figure 1: Process flow diagram</figcaption>
+   </figure>
+   ```
+
+4. **Responsive Images**: For responsive images, use HTML with classes:
+   ```markdown
+   <img 
+     src="/blog/post-1/screenshot.png" 
+     alt="Screenshot of the application" 
+     className="w-full rounded-lg shadow-md"
+   />
+   ```
+
+5. **Image Optimization**: All images are automatically optimized by Next.js. For best results:
+   - Use `.jpg` for photographs
+   - Use `.png` for screenshots and diagrams
+   - Use `.webp` for better compression
+   - Keep image dimensions reasonable (max 2000px width)
+   - Compress images before adding them
 
 ## 🛠️ Development
 

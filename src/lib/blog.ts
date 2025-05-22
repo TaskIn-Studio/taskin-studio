@@ -13,6 +13,7 @@ export interface BlogPost {
     date: string;
     author: string;
     image: string;
+    metaKeywords: string;
     content: string;
 }
 
@@ -46,4 +47,25 @@ export async function getBlogPostBySlug(slug: string): Promise<BlogPost> {
         content: processedContent.toString(),
         ...(data as Omit<BlogPost, 'slug' | 'content'>),
     };
+}
+
+export async function getPostsByKeyword(keyword: string): Promise<Omit<BlogPost, 'content'>[]> {
+    const posts = await getAllBlogPosts();
+    return posts.filter((post) =>
+        post.metaKeywords.toLowerCase().split(',').includes(keyword.toLowerCase())
+    );
+}
+
+export async function getAllKeywords(): Promise<string[]> {
+    const posts = await getAllBlogPosts();
+    const keywords = new Set<string>();
+
+    posts.forEach((post) => {
+        const postKeywords = post.metaKeywords.toLowerCase().split(',');
+        postKeywords.forEach((keyword) => {
+            keywords.add(keyword.trim());
+        });
+    });
+
+    return Array.from(keywords).sort();
 } 
