@@ -73,7 +73,7 @@ export const Footer: FC = () => {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://twitter.com/TaskinStudio"
+                  href="https://twitter.com/TaskIn Studio"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm hover:text-primary transition-colors flex items-center"
@@ -129,7 +129,7 @@ export const Footer: FC = () => {
         </div>
         <div className="border-t border-border pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            Crafted by builders, for builders. © Taskin Studio 2025
+            Crafted by builders, for builders. © TaskIn Studio 2025
           </p>
         </div>
       </div>

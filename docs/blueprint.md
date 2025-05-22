@@ -1,9 +1,9 @@
-# **App Name**: Taskin Studio Landing Page
+# **App Name**: TaskIn Studio Landing Page
 
 ## Core Features:
 
 - Hero Section: Hero Section with tagline, brief description, and clear CTAs to 'Explore Tools' and 'Join Community'.
-- About Section: About Section explaining the Taskin Studio philosophy and mission to empower makers.
+- About Section: About Section explaining the TaskIn Studio philosophy and mission to empower makers.
 - Tool Highlights: Showcase cards for tools, including Currency Converter and Social Media Post Generator. Links will point to converter.taskin.studio and creator.taskin.studio, respectively.
 - Join Community Section: Section to allow users to join a community on Telegram/Discord, or a waitlist signup.
 - Footer: Standard website footer with quick links to tools, social media, legal, and a copyright notice.

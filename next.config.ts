@@ -1,4 +1,4 @@
-import { NextConfig } from 'next';
+import { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   typescript: {
@@ -8,13 +8,13 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    formats: ['image/avif', 'image/webp'],
+    formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: '*',
+        protocol: "https",
+        hostname: "*",
       },
     ],
   },
@@ -28,14 +28,14 @@ const nextConfig: NextConfig = {
   compress: true,
   // Add page metadata
   metadata: {
-    metadataBase: new URL('https://taskin.studio'),
-    generator: 'Taskin Studio',
-    applicationName: 'Taskin Studio',
-    referrer: 'origin-when-cross-origin',
-    keywords: ['AI tools', 'productivity', 'automation', 'content creation'],
-    authors: [{ name: 'Taskin Studio Team' }],
-    creator: 'Taskin Studio',
-    publisher: 'Taskin Studio',
+    metadataBase: new URL("https://taskin.studio"),
+    generator: "TaskIn Studio",
+    applicationName: "TaskIn Studio",
+    referrer: "origin-when-cross-origin",
+    keywords: ["AI tools", "productivity", "automation", "content creation"],
+    authors: [{ name: "TaskIn Studio Team" }],
+    creator: "TaskIn Studio",
+    publisher: "TaskIn Studio",
     formatDetection: {
       email: false,
       address: false,

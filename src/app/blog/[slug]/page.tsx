@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { format } from "date-fns";
 import { Metadata } from "next";
+import { ShareButton } from "@/components/blog/ShareButton";
+import { SaveButton } from "@/components/blog/SaveButton";
 
 interface Props {
   params: {
@@ -16,13 +18,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!post) {
     return {
-      title: "Post Not Found - Taskin Studio",
+      title: "Post Not Found - TaskIn Studio",
       description: "The requested blog post could not be found.",
     };
   }
 
   return {
-    title: `${post.title} - Taskin Studio Blog`,
+    title: `${post.title} - TaskIn Studio Blog`,
     description: post.description,
     keywords: post.metaKeywords,
     authors: [{ name: post.author }],
@@ -70,7 +72,7 @@ export default async function BlogPostPage({ params }: Props) {
     },
     publisher: {
       "@type": "Organization",
-      name: "Taskin Studio",
+      name: "TaskIn Studio",
       logo: {
         "@type": "ImageObject",
         url: "/logo.png", // Update this with your actual logo path
@@ -137,12 +139,11 @@ export default async function BlogPostPage({ params }: Props) {
               <p className="text-gray-600 dark:text-gray-400">{post.author}</p>
             </div>
             <div className="flex space-x-4">
-              <button className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100">
-                Share
-              </button>
-              <button className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100">
-                Save
-              </button>
+              <ShareButton
+                url={`https://taskin.studio/blog/${post.slug}`}
+                title={post.title}
+              />
+              <SaveButton postId={post.slug} title={post.title} />
             </div>
           </div>
         </footer>

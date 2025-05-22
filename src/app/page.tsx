@@ -4,7 +4,7 @@ import { BlogCard } from "@/components/blog/BlogCard";
 import { AdComponent } from "@/components/AdComponent";
 
 export const metadata = {
-  title: "Taskin Studio — Simple AI Tools for Builders",
+  title: "TaskIn Studio — Simple AI Tools for Builders",
   description:
     "Discover a suite of minimal AI-powered tools built to save time and boost productivity. Currency converter, content generators, and more.",
 };

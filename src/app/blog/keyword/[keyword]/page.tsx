@@ -11,8 +11,8 @@ interface KeywordPageProps {
 export async function generateMetadata({ params }: KeywordPageProps) {
   const keyword = decodeURIComponent(params.keyword);
   return {
-    title: `Posts tagged with "${keyword}" — Taskin Studio Blog`,
-    description: `Browse all blog posts tagged with "${keyword}" on Taskin Studio.`,
+    title: `Posts tagged with "${keyword}" — TaskIn Studio Blog`,
+    description: `Browse all blog posts tagged with "${keyword}" on TaskIn Studio.`,
   };
 }
 

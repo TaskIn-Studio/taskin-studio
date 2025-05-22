@@ -1,21 +1,24 @@
-# Taskin Studio
+# TaskIn Studio
 
 A minimal, fast, and SEO-friendly blog-first site built with Next.js and TailwindCSS. The platform features AI-powered tools and generates revenue through Google AdSense.
 
 ## 🌟 Features
 
 - **Blog System**
+
   - Markdown-based content management
   - SEO-optimized blog posts
   - Responsive blog cards and layouts
   - Syntax highlighting for code blocks
 
 - **Tools Integration**
+
   - Currency Converter (converter.taskin.studio)
   - Content Creator (creator.taskin.studio)
   - Extensible tool system for future additions
 
 - **Modern Design**
+
   - Clean, professional typography using Inter font
   - Dark mode support
   - Responsive layout
@@ -33,23 +36,26 @@ A minimal, fast, and SEO-friendly blog-first site built with Next.js and Tailwin
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn
 
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/yourusername/taskin-studio.git
    cd taskin-studio
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
 
 3. Create a `.env.local` file:
+
    ```env
    NEXT_PUBLIC_SITE_URL=https://taskin.studio
    ```
@@ -83,12 +89,12 @@ Blog posts are written in Markdown and stored in the `content/blog` directory. E
 
 ```markdown
 ---
-title: 'Post Title'
-description: 'Post description'
-date: 'YYYY-MM-DD'
-author: 'Author Name'
-image: '/blog/image.jpg'
-metaKeywords: 'keyword1, keyword2, keyword3, keyword4, keyword5'
+title: "Post Title"
+description: "Post description"
+date: "YYYY-MM-DD"
+author: "Author Name"
+image: "/blog/image.jpg"
+metaKeywords: "keyword1, keyword2, keyword3, keyword4, keyword5"
 ---
 ```
 
@@ -104,6 +110,7 @@ The `metaKeywords` field is used for SEO purposes. It should be a comma-separate
 6. **No Spaces**: Don't include spaces after commas
 
 Example:
+
 ```markdown
 metaKeywords: 'next.js,react,web development,tutorial,frontend'
 ```
@@ -111,6 +118,7 @@ metaKeywords: 'next.js,react,web development,tutorial,frontend'
 ### Adding Images to Blog Posts
 
 1. **Store Images**: Place your images in the `public/blog` directory. For example:
+
    ```
    public/blog/
    ├── post-1/
@@ -121,11 +129,13 @@ metaKeywords: 'next.js,react,web development,tutorial,frontend'
    ```
 
 2. **Reference Images**: In your markdown file, you can include images using standard markdown syntax:
+
    ```markdown
    ![Alt text for the image](/blog/post-1/hero.jpg)
    ```
 
 3. **Image with Caption**: You can add a caption using HTML:
+
    ```markdown
    <figure>
      <img src="/blog/post-1/diagram.png" alt="Diagram showing the process flow" />
@@ -134,6 +144,7 @@ metaKeywords: 'next.js,react,web development,tutorial,frontend'
    ```
 
 4. **Responsive Images**: For responsive images, use HTML with classes:
+
    ```markdown
    <img 
      src="/blog/post-1/screenshot.png" 
@@ -171,6 +182,7 @@ npm run build
 ```
 
 This will:
+
 - Build the Next.js application
 - Generate the sitemap
 - Optimize assets
@@ -205,5 +217,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 For any questions or support, please contact:
+
 - Email: support@taskin.studio
 - Website: https://taskin.studio

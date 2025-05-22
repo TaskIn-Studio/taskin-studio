@@ -3,7 +3,7 @@ import RSS from "rss";
 
 export async function GET() {
   const feed = new RSS({
-    title: "Taskin Studio Blog",
+    title: "TaskIn Studio Blog",
     description:
       "Read our latest articles about AI tools, productivity, and technology.",
     site_url: "https://taskin.studio",
@@ -11,7 +11,7 @@ export async function GET() {
     image_url: "https://taskin.studio/taskin-logo.png",
     language: "en",
     pubDate: new Date(),
-    copyright: `All rights reserved ${new Date().getFullYear()}, Taskin Studio`,
+    copyright: `All rights reserved ${new Date().getFullYear()}, TaskIn Studio`,
   });
 
   const posts = await getAllBlogPosts();

@@ -16,7 +16,7 @@ export default function WaitlistPage() {
     e.preventDefault();
     setIsLoading(true);
     // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    await new Promise((resolve) => setTimeout(resolve, 1500));
     setIsLoading(false);
     toast({
       title: "You're on the list!",
@@ -32,11 +32,14 @@ export default function WaitlistPage() {
         Join Our Waitlist
       </h1>
       <p className="max-w-md mx-auto text-lg text-muted-foreground mb-8">
-        Be the first to know about new tools, exclusive updates, and special offers from Taskin Studio.
+        Be the first to know about new tools, exclusive updates, and special
+        offers from TaskIn Studio.
       </p>
       <form onSubmit={handleSubmit} className="w-full max-w-md space-y-4">
         <div>
-          <Label htmlFor="email" className="sr-only">Email Address</Label>
+          <Label htmlFor="email" className="sr-only">
+            Email Address
+          </Label>
           <Input
             type="email"
             id="email"
@@ -47,7 +50,12 @@ export default function WaitlistPage() {
             className="h-12 text-lg"
           />
         </div>
-        <Button type="submit" size="lg" className="w-full rounded-lg shadow-md hover:shadow-lg transition-shadow" disabled={isLoading}>
+        <Button
+          type="submit"
+          size="lg"
+          className="w-full rounded-lg shadow-md hover:shadow-lg transition-shadow"
+          disabled={isLoading}
+        >
           {isLoading ? "Submitting..." : "Notify Me"}
         </Button>
       </form>

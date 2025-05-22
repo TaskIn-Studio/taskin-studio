@@ -7,7 +7,7 @@ export const metadata: Metadata = {
       "application/rss+xml": [
         {
           url: "/blog/feed.xml",
-          title: "Taskin Studio Blog RSS Feed",
+          title: "TaskIn Studio Blog RSS Feed",
         },
       ],
     },

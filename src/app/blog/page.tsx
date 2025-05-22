@@ -6,7 +6,7 @@ import { Metadata } from "next";
 import { getAllBlogPosts, getCategories } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Blog — Taskin Studio",
+  title: "Blog — TaskIn Studio",
   description:
     "Read our latest articles about AI tools, productivity, and technology.",
   keywords: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "product updates",
   ],
   openGraph: {
-    title: "Blog — Taskin Studio",
+    title: "Blog — TaskIn Studio",
     description:
       "Read our latest articles about AI tools, productivity, and technology.",
     type: "website",
@@ -27,13 +27,13 @@ export const metadata: Metadata = {
         url: "/taskin-logo.png", // Update this with your actual OG image path
         width: 1200,
         height: 630,
-        alt: "Taskin Studio Blog",
+        alt: "TaskIn Studio Blog",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blog — Taskin Studio",
+    title: "Blog — TaskIn Studio",
     description:
       "Read our latest articles about AI tools, productivity, and technology.",
     images: ["/taskin-logo.png"], // Update this with your actual OG image path
@@ -100,13 +100,13 @@ export default async function BlogPage({ searchParams }: Props) {
     const jsonLd = {
       "@context": "https://schema.org",
       "@type": "Blog",
-      name: "Taskin Studio Blog",
+      name: "TaskIn Studio Blog",
       description:
         "Read our latest articles about AI tools, productivity, and technology.",
       url: "https://taskin.studio/blog",
       publisher: {
         "@type": "Organization",
-        name: "Taskin Studio",
+        name: "TaskIn Studio",
         logo: {
           "@type": "ImageObject",
           url: "/logo.png", // Update with your actual logo path
@@ -138,7 +138,7 @@ export default async function BlogPage({ searchParams }: Props) {
               Blog
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              Insights, tutorials, and updates from the Taskin Studio team
+              Insights, tutorials, and updates from the TaskIn Studio team
             </p>
           </header>
 

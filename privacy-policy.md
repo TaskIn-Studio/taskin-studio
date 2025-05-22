@@ -1,19 +1,21 @@
-# Privacy Policy for Taskin Studio
+# Privacy Policy for TaskIn Studio
 
-*Last Updated: [Current Date]*
+_Last Updated: [Current Date]_
 
 ## Introduction
 
-Welcome to Taskin Studio ("we," "our," or "us"). We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you about how we look after your personal data when you visit our website (https://taskin.studio) and tell you about your privacy rights and how the law protects you.
+Welcome to TaskIn Studio ("we," "our," or "us"). We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you about how we look after your personal data when you visit our website (https://taskin.studio) and tell you about your privacy rights and how the law protects you.
 
 ## Data We Collect
 
 ### Information You Provide
+
 - Usage data (how you interact with our tools)
 - Technical data (browser type, device information)
 - Analytics data (pages visited, time spent)
 
 ### Automatically Collected Information
+
 - IP address
 - Browser type and version
 - Operating system
@@ -24,6 +26,7 @@ Welcome to Taskin Studio ("we," "our," or "us"). We respect your privacy and are
 ## How We Use Your Data
 
 We use the collected data for various purposes:
+
 - To provide and maintain our service
 - To notify you about changes to our service
 - To provide customer support
@@ -46,6 +49,7 @@ We have implemented appropriate security measures to prevent your personal data 
 ## Your Rights Under Indian Law
 
 Under the Information Technology Act, 2000, and the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011, you have the following rights:
+
 - Right to access your personal data
 - Right to correct your personal data
 - Right to withdraw consent
@@ -62,5 +66,6 @@ We may update our Privacy Policy from time to time. We will notify you of any ch
 ## Contact Us
 
 If you have any questions about this Privacy Policy, please contact us:
+
 - By email: support@taskin.studio
-- By visiting the contact page on our website: https://taskin.studio/contact 
+- By visiting the contact page on our website: https://taskin.studio/contact
