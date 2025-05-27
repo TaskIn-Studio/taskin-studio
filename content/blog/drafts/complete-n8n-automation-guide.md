@@ -15,7 +15,7 @@ metaKeywords:
   ]
 date: "2025-05-22"
 author: "TaskInTeam"
-image: "/blog/n8n-automation-guide.svg"
+image: "/blog/n8n/n8n-intro.png"
 category: "Automation"
 readTime: "8 min read"
 featured: true
@@ -33,7 +33,7 @@ In this comprehensive guide, we'll walk you through everything you need to know 
 
 ## 🚀 What is n8n and Why Should You Care?
 
-n8n (pronounced "n-eight-n") stands for "node to node" and represents a new generation of workflow automation tools. Think of it as **Zapier's more powerful, open-source cousin** that doesn't limit your creativity.
+n8n (pronounced "n-eight-n") stands for "node to node" and represents a new generation of workflow automation tools. While n8n shares some similarities with popular automation platforms, its **open-source** nature and node-based architecture offer unique advantages for developers and businesses.
 
 ### Key Advantages of n8n:
 
@@ -43,7 +43,10 @@ n8n (pronounced "n-eight-n") stands for "node to node" and represents a new gene
 - **Self-hosted or cloud options** for maximum flexibility
 - **No monthly limits** on automations or executions
 
-<img src="/api/placeholder/800/400" alt="n8n workflow interface showing connected nodes" />
+<!-- image in md file -->
+![n8n workflow interface showing connected nodes](/blog/n8n/n8n-screenshot-readme.png)
+
+
 
 ---
 
@@ -51,20 +54,20 @@ n8n (pronounced "n-eight-n") stands for "node to node" and represents a new gene
 
 ### Option 1: n8n Cloud (Easiest for Beginners)
 
-The fastest way to start is with **n8n Cloud**, their hosted solution:
+The fastest way to start is with [**n8n Cloud**](https://n8n.io), their hosted solution:
 
-1. **Visit n8n.cloud** and create your account
-2. **Choose your plan** (Free tier includes 5,000 executions/month)
-3. **Verify your email** and log into your dashboard
+1. **Visit n8n.io** and create your account
+2. **Verify your email** and log into your dashboard
 
-<img src="/api/placeholder/700/350" alt="n8n cloud signup process screenshot" />
+
+[![n8n cloud](/blog/n8n/n8n-cloud.png)](https://n8n.io)
 
 ### Option 2: Self-Hosted Installation
 
 For more control, install n8n locally:
 
 ```bash
-# Using npm (requires Node.js 16 or higher)
+# Using npm (requires Node.js)
 npm install -g n8n
 
 # Start n8n
@@ -83,7 +86,7 @@ docker run -it --rm \
   n8nio/n8n
 ```
 
-<img src="/api/placeholder/700/300" alt="n8n installation options comparison chart" />
+![n8n installation options comparison chart](/blog/n8n/n8n-hosting-options.jpeg)
 
 ---
 
@@ -98,7 +101,7 @@ Once you're logged in, you'll see n8n's clean, node-based interface:
 3. **Workflow Menu** - Save, execute, and manage your automations
 4. **Node Inspector** - Configure individual nodes and view data
 
-<img src="/api/placeholder/800/500" alt="Annotated screenshot of n8n interface with labeled components" />
+![n8n interface](/blog/n8n/n8n-interface.png)
 
 ### Essential Concepts:
 
