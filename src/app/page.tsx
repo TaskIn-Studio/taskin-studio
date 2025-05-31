@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getAllBlogPosts } from "@/lib/blog";
 import { BlogCard } from "@/components/blog/BlogCard";
-import { AdComponent } from "@/components/AdComponent";
+import { tools } from "./tools/page";
 
 export const metadata = {
   title: "TaskIn Studio — Simple AI Tools for Builders",
@@ -50,30 +50,23 @@ export default async function HomePage() {
           Featured Tools
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <Link
-            href="https://converter.taskin.studio"
-            className="group rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-md dark:border-gray-800 dark:bg-gray-900"
-          >
-            <div className="mb-4 text-4xl">💱</div>
-            <h3 className="mb-2 text-xl font-semibold text-gray-900 group-hover:text-purple-600 dark:text-gray-100 dark:group-hover:text-purple-400">
-              Currency Converter
-            </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              Convert currencies with real-time exchange rates
-            </p>
-          </Link>
-          <Link
-            href="https://creator.taskin.studio"
-            className="group rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-md dark:border-gray-800 dark:bg-gray-900"
-          >
-            <div className="mb-4 text-4xl">✍️</div>
-            <h3 className="mb-2 text-xl font-semibold text-gray-900 group-hover:text-purple-600 dark:text-gray-100 dark:group-hover:text-purple-400">
-              Content Creator
-            </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              Generate engaging content with AI assistance
-            </p>
-          </Link>
+          {
+            tools.slice(-2).reverse().map((tool) => (
+              <Link
+                key={tool.name}
+                href={tool.url}
+                className="group rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-md dark:border-gray-800 dark:bg-gray-900"
+              >
+                <div className="mb-4 text-4xl">{tool.icon}</div>
+                <h2 className="mb-2 text-xl font-semibold text-gray-900 group-hover:text-purple-600 dark:text-gray-100 dark:group-hover:text-purple-400">
+                  {tool.name}
+                </h2>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  {tool.description}
+                </p>
+              </Link>
+            ))
+          }
           <Link
             href="/tools"
             className="group rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-md dark:border-gray-800 dark:bg-gray-900"

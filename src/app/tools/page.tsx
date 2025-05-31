@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const tools = [
+export const tools = [
   {
     name: "Currency Converter",
     description: "Convert currencies with real-time exchange rates",
@@ -13,6 +13,12 @@ const tools = [
     icon: "✍️",
     url: "https://creator.taskin.studio",
   },
+  {
+    name: "VeoVerse",
+    description: "Generate short videos with google's veo models",
+    icon: "📺",
+    url: "https://veoverse.taskin.studio"
+  }
   // Add more tools as they become available
 ];
 
